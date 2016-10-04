@@ -17,11 +17,12 @@ networking:
 folders:
     - map: /Users/miguelr/Projects/Personal/PHP/webzenter
       to: /var/www/webzenter
-      type: nfs
+      owner: www-data
+      group: www-data
 
 sites:
-#    - hostname: webzenter.dev
-#      to: /var/www/webzenter/web
+    - hostname: webzenter.dev
+      to: /var/www/webzenter/web
 
 databases:
     - webzenter
